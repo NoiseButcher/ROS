@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "vision_main")
+set(vision_main_MAINTAINER "ares <ares@todo.todo>")
+set(vision_main_DEPRECATED "")
+set(vision_main_VERSION "0.0.0")
+set(vision_main_BUILD_DEPENDS "OpenCV" "cv_bridge" "image_transport" "pcl" "roscpp" "rospy" "sensor_msgs" "std_msgs" "stereo_image_proc" "uvc_camera")
+set(vision_main_RUN_DEPENDS "OpenCV" "cv_bridge" "image_transport" "pcl" "roscpp" "rospy" "sensor_msgs" "std_msgs" "stereo_image_proc" "uvc_camera")
+set(vision_main_BUILDTOOL_DEPENDS "catkin")

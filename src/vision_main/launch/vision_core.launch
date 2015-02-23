@@ -1,0 +1,28 @@
+<!--xml-->
+<!-- NOTE HERE, /dev/video0 is the laptop internal camera. -->
+<!-- Typically, this launch file should just start streaming the cameras, so the next step should be calibration -->
+<launch>
+ <group ns="stereo">
+  <!--LEFT HAND SIDE -->
+  <node ns="left" pkg="uvc_camera" type="uvc_camera_node" name="uvc_camera_l">
+    <param name="width" type="int" value="640" />
+    <param name="height" type="int" value="360" />
+    <param name="fps" type="int" value="30" />
+    <param name="frame" type="string" value="camera" />
+
+    <!-- Change this value field with whatever /dev/video* the left camera is in -->
+    <param name="device" type="string" value="/dev/video1" />
+  </node>
+
+  <!--RIGHT HAND SIDE -->
+  <node ns="right" pkg="uvc_camera" type="uvc_camera_node" name="uvc_camera_r">
+    <param name="width" type="int" value="640" />
+    <param name="height" type="int" value="360" />
+    <param name="fps" type="int" value="30" />
+    <param name="frame" type="string" value="camera" />
+
+    <!-- Change this value field with whatever /dev/video* the right camera is in -->
+    <param name="device" type="string" value="/dev/video2" />
+  </node>
+  </group>
+</launch>

@@ -1,0 +1,9 @@
+<!--xml-->
+<!--Post calibration stereo thing -->
+<launch>
+  <node pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" name="stereo_image_proc">
+    <env name="ROS_NAMESPACE" value="stereo" />
+    <param name ="approximate_sync" type="bool" value="True" />
+    <param name="queue_size" type="int" value="20" />
+  </node>
+</launch>

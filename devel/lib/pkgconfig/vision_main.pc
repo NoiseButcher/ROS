@@ -1,0 +1,8 @@
+prefix=/home/ares/vision_ws/devel
+
+Name: vision_main
+Description: Description of vision_main
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ares/vision_ws/devel/lib 
+Requires: 

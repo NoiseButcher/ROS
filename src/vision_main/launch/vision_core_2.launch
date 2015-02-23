@@ -1,0 +1,11 @@
+<launch>
+  <node ns="stereo" pkg="uvc_camera" type="uvc_stereo_node" name="uvc_stereo">
+    <param name="width" type="int" value="640" />
+    <param name="height" type="int" value="360" />
+    <param name="fps" type="int" value="50" />
+    <param name="frame" type="string" value="stereo" />
+
+    <param name="left/device" type="string" value="/dev/video1" />
+    <param name="right/device" type="string" value="/dev/video2" />
+  </node>
+</launch>
